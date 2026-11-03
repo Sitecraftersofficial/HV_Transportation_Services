@@ -24,7 +24,7 @@ export function BookPage() {
   function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const message = [
-      "Hello Noble Nexus, I would like to enquire about a rental.",
+      "Hello HV Transportation Services, I would like to enquire about a rental.",
       car ? `Vehicle: ${car.name}` : "",
       `Dates: ${pickupDate} to ${returnDate}`,
       `Driver: ${driverOption === "chauffeur" ? "With chauffeur" : "Self-drive"}`,

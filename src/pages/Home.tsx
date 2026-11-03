@@ -138,7 +138,7 @@ export function HomePage() {
       <section className="bg-secondary py-24">
         <div className="container-page">
           <div className="text-center mb-16">
-            <p className="eyebrow text-gold mb-4">The Noble Nexus Standard</p>
+            <p className="eyebrow text-gold mb-4">The HV Transportation Services Standard</p>
             <h2 className="font-serif text-4xl md:text-5xl text-navy">Why rent with us.</h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">

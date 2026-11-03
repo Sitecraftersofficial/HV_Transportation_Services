@@ -9,20 +9,22 @@ export function SiteFooter() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-navy text-cream/70 pt-20 pb-10 mt-24">
+    <footer className="bg-navy text-cream/70 pt-14 pb-10 mt-24">
       <div className="container-page grid md:grid-cols-4 gap-12 mb-20">
-        <div className="col-span-2">
+        <div className="col-span-2 min-w-0">
           <div className="flex items-center gap-3 mb-6">
             <img
               src="/images/logo.jpeg"
-              alt="Noble Nexus Transportation Services logo"
-              className="h-32 w-32 shrink-0 object-contain mix-blend-screen"
+              alt="HV Transportation Services logo"
+              className="h-16 w-16 sm:h-20 sm:w-20 md:h-32 md:w-32 shrink-0 object-contain mix-blend-screen"
             />
-            <span className="flex flex-col leading-tight">
-              <span className="font-serif text-sm tracking-[0.2em] uppercase text-cream">
-                NOBLE NEXUS SOLUTIONS
+            <span className="flex flex-col leading-tight min-w-0">
+              <span className="font-serif text-sm sm:text-base tracking-[0.08em] md:tracking-[0.18em] uppercase text-cream font-semibold break-words">
+                HV Transportation Services
               </span>
-              <span className="text-[9px] tracking-[0.28em] text-gold uppercase">Car Rental</span>
+              <span className="text-[9px] md:text-[10px] tracking-[0.2em] md:tracking-[0.32em] text-gold uppercase">
+                Car Rental · Rwanda
+              </span>
             </span>
           </div>
           <p className="max-w-sm text-sm leading-relaxed text-cream/50">{site.description}</p>
@@ -61,7 +63,7 @@ export function SiteFooter() {
                 Contact
               </Link>
             </li>
-            <li>
+            <li className="break-all">
               <a href={`mailto:${contact.email}`} className="hover:text-gold transition-colors">
                 {contact.email}
               </a>
@@ -77,11 +79,11 @@ export function SiteFooter() {
         Center: "Made in Rwanda by the Sitecrafters Team" credit
         Right: intentionally empty for floating quick-access buttons
       */}
-      <div className="container-page pt-8 border-t border-cream/10 grid md:grid-cols-[1fr_auto_1fr] items-center gap-4 text-xs text-cream/40">
-        <p className="md:justify-self-start">
+      <div className="container-page pt-8 border-t border-cream/10 grid md:grid-cols-[1fr_auto_1fr] items-center gap-3 text-xs text-cream/40">
+        <p className="md:justify-self-start text-center md:text-left">
           &copy; {year} {site.legalName}. All rights reserved.
         </p>
-        <p className="text-center">
+        <p className="text-center md:text-left">
           Made in Rwanda by the{" "}
           <a
             href={credit.url}

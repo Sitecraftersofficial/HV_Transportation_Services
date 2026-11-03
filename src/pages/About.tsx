@@ -12,7 +12,7 @@ export function AboutPage() {
             The road, <span className="italic text-gold">quietly perfected</span>.
           </h1>
           <p className="text-navy/70 leading-relaxed mb-4">
-            Noble Nexus makes renting a car feel straightforward, comfortable and dependable. We
+            HV Transportation Services makes renting a car feel straightforward, comfortable and dependable. We
             bring together a carefully selected range of vehicles for everyday travel, business
             trips and special occasions, with a service designed around your needs.
           </p>
@@ -24,7 +24,7 @@ export function AboutPage() {
         </div>
         <img
           src={heroImg}
-          alt="Noble Nexus rental fleet"
+          alt="HV Transportation Services rental fleet"
           loading="lazy"
           width={800}
           height={1000}

@@ -42,18 +42,24 @@ export function SiteHeader({ path }: { path: string }) {
 
   return (
     <header className="sticky top-0 z-50 w-full bg-navy text-cream border-b border-gold/20">
-      <div className="container-page flex items-center justify-between h-24">
-        <Link to="/" className="flex items-center gap-3" aria-label={`${site.name} home`}>
+      <div className="container-page flex items-center justify-between h-20 md:h-28">
+        <Link
+          to="/"
+          className="flex items-center gap-2 md:gap-3 min-w-0"
+          aria-label={`${site.name} home`}
+        >
           <img
             src="/images/logo.jpeg"
-            alt="Noble Nexus Transportation Services logo"
-            className="h-24 w-24 shrink-0 object-contain mix-blend-screen"
+            alt="HV Transportation Services logo"
+            className="h-12 w-12 sm:h-16 sm:w-16 md:h-24 md:w-24 shrink-0 object-contain mix-blend-screen"
           />
-          <span className="flex flex-col leading-tight">
-            <span className="font-serif text-sm md:text-base tracking-[0.2em] uppercase">
-              NOBLE NEXUS SOLUTIONS
+          <span className="flex flex-col leading-tight min-w-0">
+            <span className="font-serif text-[11px] sm:text-sm md:text-xl tracking-[0.08em] md:tracking-[0.18em] uppercase text-cream font-semibold">
+              HV Transportation Services
             </span>
-            <span className="text-[9px] tracking-[0.28em] text-gold uppercase">Car Rental</span>
+            <span className="text-[8px] sm:text-[9px] md:text-[11px] tracking-[0.2em] md:tracking-[0.32em] text-gold uppercase">
+              Car Rental · Rwanda
+            </span>
           </span>
         </Link>
 
@@ -83,7 +89,7 @@ export function SiteHeader({ path }: { path: string }) {
         {/* Mobile toggle */}
         <button
           type="button"
-          className="lg:hidden p-2 text-cream"
+          className="lg:hidden p-2 -mr-2 text-cream shrink-0"
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}

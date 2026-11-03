@@ -1,5 +1,5 @@
 /**
- * nx-motion — tiny motion utilities for the Noble Nexus design system.
+ * nx-motion — tiny motion utilities for the HV design system.
  * - RevealObserver: adds `.in` to `.nx-reveal` elements as they scroll in.
  * - <Tilt>: pointer-tracked 3D tilt wrapper (pure CSS transforms, no deps).
  * - <Marquee>: infinite horizontal strip (pauses on hover).

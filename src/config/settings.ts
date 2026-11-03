@@ -11,16 +11,16 @@
 
 export const site = {
   /** Brand name shown in header, footer and meta tags. */
-  name: "Noble Nexus Car Rentals",
+  name: "HV Transportation Services",
   /** Short brand used in compact UI (header logo wordmark) */
-  shortName: "Noble Nexus",
+  shortName: "HV",
   /** Optional sub-line (e.g. legal entity) */
-  legalName: "Noble Nexus Solutions — Car Rentals",
+  legalName: "HV Transportation Services",
   /** Short tagline for hero / SEO */
   tagline: "Premium car rentals for every journey.",
   /** Long description for meta tags */
   description:
-    "Noble Nexus Car Rentals — Rwanda's premium car rental. Self-drive or chauffeured, from economy to luxury.",
+    "HV Transportation Services — Rwanda's premium car rental. Self-drive or chauffeured, from economy to luxury.",
   /** Founded year (for footer copyright) */
   foundedYear: 1984,
 } as const;
