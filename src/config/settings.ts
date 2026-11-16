@@ -40,7 +40,7 @@ export const credit = {
 export const contact = {
   phone: "+250788351955",
   whatsapp: "+250788351955",
-  email: "nnexusnoblesolutions@gmail.com",
+  email: "heptavela@gmail.com",
 } as const;
 
 export const social = {
